@@ -10,8 +10,6 @@ Ohjelma lukee sensoria. Jos sensorin antama lukema ylittää ennalta määritety
 
 */
 
-
-
 #include <dht11.h>
 #include <SoftwareSerial.h>
 
@@ -50,11 +48,9 @@ void setup()
 void loop()
 {
 
-
 // Looppiin rakennetaan koodi joka tunnistaa, kun ennaltamääritetty raja-arvo on 
 // ylitetty.
 
-  
   Serial.println();
 
   int chk = DHT11.read(DHT11PIN);
@@ -102,7 +98,6 @@ void loop()
       delay(500);
    }
    
-    
 
     else
     {
